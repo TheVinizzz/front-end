@@ -1,0 +1,47 @@
+export type IOrder = {
+    id: number
+    unique_order_id: string
+    orderstatus_id: number
+    user_id: number
+    coupon_name: any
+    location: string
+    address: string
+    endnumero: any
+    tax: any
+    restaurant_charge: any
+    delivery_charge: any
+    actual_delivery_charge: any
+    total: string
+    created_at: string
+    updated_at: string
+    payment_mode: string
+    order_comment: any
+    restaurant_id: number
+    transaction_id: string
+    delivery_type: number
+    payable: string
+    wallet_amount: any
+    tip_amount: any
+    tax_amount: string
+    coupon_amount: any
+    sub_total: string
+    cash_change_amount: any
+    is_scheduled: boolean
+    schedule_date: any
+    schedule_slot: any
+    distance: string
+    delivery_pin: string
+    zone_id: any
+    mercadotoken: any
+    gerenciatoken: any
+    numero: any
+    bairro: any
+    refe: any
+    comentario: any
+    data: any
+    copia: any
+    qrcode: any
+    is_foreign: boolean
+    tip_delivery: any
+  }
+  
