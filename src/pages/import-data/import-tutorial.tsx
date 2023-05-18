@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-
 import img0001 from '/src/assets/tutorial/0001.png';
 import img0002 from '/src/assets/tutorial/0002.png';
 import img0003 from '/src/assets/tutorial/0003.png';
@@ -10,13 +7,10 @@ import img0006 from '/src/assets/tutorial/0006.png';
 import img0007 from '/src/assets/tutorial/0007.png';
 import img0008 from '/src/assets/tutorial/0008.png';
 import img0009 from '/src/assets/tutorial/0009.png';
-import img0010 from '/src/assets/tutorial/0010.png';
 import img0011 from '/src/assets/tutorial/0011.png';
 import img0012 from '/src/assets/tutorial/0012.png';
 
 function ImportDataTutorial() {
-	
-	const [isLoading, setIsLoading] = useState(true);
 
 	function toImportData(){
 		(document.getElementById("modalImportData") as HTMLDivElement).classList.remove("w-full");
@@ -29,10 +23,7 @@ function ImportDataTutorial() {
 		(document.getElementById("importCode") as HTMLDivElement).classList.add("hidden");
 		(document.getElementById("avatar") as HTMLImageElement).classList.remove("hidden");
 	}
-	function next(){
-	}
-	function back(){
-	}
+	
 	return (
 		<>
 			<div className="space-x-6 mt-4 flex leading-6 justify-center mb-5" >

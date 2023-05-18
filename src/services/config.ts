@@ -15,12 +15,12 @@ export interface IConfigProps {
 export class Config {
   axios: AxiosInstance;
 
-  constructor({ api_url, has_user_header = false }: IConfigProps) {
+  constructor({ api_url }: IConfigProps) {
     if (!api_url) throw new Error("Missing api_url");
-    this.axios = this.create(api_url, has_user_header);
+    this.axios = this.create(api_url);
   }
 
-  create(apiUrl: string, has_user_header: boolean) {
+  create(apiUrl: string) {
     return axios.create({
         baseURL: apiUrl,
         headers: {
